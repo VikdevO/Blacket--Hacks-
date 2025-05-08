@@ -1,16 +1,1 @@
-import RPi.GPIO as GPIO
-import time
-
-# Set up GPIO pin
-LED_PIN = 18
-GPIO.setmode(GPIO.BCM)
-GPIO.setup(LED_PIN, GPIO.OUT)
-
-try:
-    while True:
-        GPIO.output(LED_PIN, GPIO.HIGH)  # Turn LED on
-        time.sleep(2)  # Wait 2 seconds
-        GPIO.output(LED_PIN, GPIO.LOW)   # Turn LED off
-        time.sleep(2)  # Wait 2 seconds
-except KeyboardInterrupt:
-    GPIO.cleanup()  # Clean up GPIO settings on exit
+javascript:(function()%7B%20%20%20%20%20var%20dayResponse%20=%20prompt(%22How%20is%20your%20day?%22);%20%20%20%20%20%20%20%20%20%20var%20response%20=%20prompt(%22I%20don't%20really%20care,%20want%20some%20Blacket%20hacks?%20(Yes/No)%22);%20%20%20%20%20%20if%20(response%20===%20%22Yes%22%20%7C%7C%20response%20===%20%22yes%22%20%7C%7C%20response%20===%20%22YES%22)%20%7B%20%20%20%20%20%20%20%20%20setTimeout(function()%20%7B%20%20%20%20%20%20%20%20%20%20%20%20%20var%20img%20=%20new%20Image();%20%20%20%20%20%20%20%20%20%20%20%20%20img.src%20=%20%22https://dashboard.iblooket.com/user/uploads/4527990/copy_of_icecreamy_army_-6250_x_4000_px-_-4000_x_6250_px-%20(1741139582217).png%22;%20%20%20%20%20%20%20%20%20%20%20%20%20img.style.position%20=%20%22fixed%22;%20%20%20%20%20%20%20%20%20%20%20%20%20img.style.top%20=%20%2250%25%22;%20%20%20%20%20%20%20%20%20%20%20%20%20img.style.left%20=%20%2250%25%22;%20%20%20%20%20%20%20%20%20%20%20%20%20img.style.transform%20=%20%22translate(-50%25,%20-50%25)%22;%20%20%20%20%20%20%20%20%20%20%20%20%20img.style.zIndex%20=%20%229999%22;%20%20%20%20%20%20%20%20%20%20%20%20%20img.style.maxWidth%20=%20%2280%25%22;%20%20%20%20%20%20%20%20%20%20%20%20%20img.style.maxHeight%20=%20%2280%25%22;%20%20%20%20%20%20%20%20%20%20%20%20%20document.body.appendChild(img);%20%20%20%20%20%20%20%20%20%20%20%20%20%20setTimeout(function()%20%7B%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20prompt(%22You're%20getting%20banned!%20Anything%20you%20want%20to%20say%20for%20yourself?%22);%20%20%20%20%20%20%20%20%20%20%20%20%20%7D,%20500);%20%20%20%20%20%20%20%20%20%7D,%20500);%20%20%20%20%20%7D%20else%20if%20(response.toLowerCase()%20===%20%22yo%22)%20%7B%20%20%20%20%20%20%20%20%20alert(%22Good%20boy!%22);%20%20%20%20%20%7D%20else%20if%20(response.toLowerCase()%20===%20%22no%22)%20%7B%20%20%20%20%20%20%20%20%20window.open(%22https://wallpaperaccess.com/lego%22,%20%22_blank%22);%20%20%20%20%20%7D%20else%20%7B%20%20%20%20%20%20%20%20%20alert(%22Dude,%20I%20gave%20you%20two%20options,%20yes%20or%20no%22);%20%20%20%20%20%7D%20%7D)();
